@@ -1,0 +1,20 @@
+%flex_ceneter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%hide_block {
+    opacity: 0;
+    visibility: hidden;
+}
+
+%show_block {
+    opacity: 1;
+    visibility: visible;
+}
+
+%full_screen {
+    width: 100vw;
+    height: 100vh;
+}

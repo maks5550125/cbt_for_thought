@@ -1,0 +1,157 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, main, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.login__body, .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font-family: Roboto, serif;
+}
+
+._hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+._shown {
+  opacity: 1;
+  visibility: visible;
+}
+
+.login {
+  background-color: #c8f7c8;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.login__body {
+  background-color: #fff;
+  width: 25rem;
+  height: 37.5rem;
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.05);
+  font-size: 1.5rem;
+}
+.login__email-label {
+  display: block;
+}
+.login__password-label {
+  display: block;
+}
+.login__submit {
+  padding: 0.3125rem;
+  background-color: #90ee90;
+}
+.login__email, .login__password {
+  padding-left: 0.5rem;
+  border: 1px solid #bbb;
+  background-color: #edfced;
+  width: 12.5rem;
+  height: 2.1875rem;
+  font-size: 1.125rem;
+}
+.login__email-label, .login__password-label {
+  margin-bottom: 2%;
+}
+.login__email-wrapper, .login__password-wrapper {
+  margin-bottom: 7%;
+}
+.login__body, .login__submit, .login__email, .login__password {
+  border-radius: 0.1875rem;
+}
+
+@media (max-width: 28.125rem) {
+  .login__body {
+    width: 18.125rem;
+    height: 27.1875rem;
+  }
+}

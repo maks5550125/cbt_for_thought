@@ -1,0 +1,48 @@
+.login {
+    @extend %flex_ceneter;
+    background-color: $color_green_2;
+    @extend %full_screen;
+    transition-duration: 300ms;
+
+    &__body {
+        @extend %flex_ceneter;
+        background-color: #fff;
+        width: calc_rem(400);
+        height: calc_rem(600);
+        box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.05);
+        font-size: calc_rem(24);
+    }
+    &__form {}
+    &__email-wrapper {}
+    &__email-label {
+        display: block;
+    }
+    &__email {}
+    &__password-wrapper {}
+    &__password-label {
+        display: block;
+    }
+    &__password {}
+    &__submit {
+        padding: calc_rem(5);
+        background-color: $color_green_4;
+    }
+    &__email, &__password {
+        padding-left: calc_rem(8);
+        border: 1px solid #bbb;
+        background-color: $color_green_1;
+        width: calc_rem(200);
+        height: calc_rem(35);
+        font-size: calc_rem(18);
+    }
+    &__email-label, &__password-label {
+        margin-bottom: calc_percent(8, 400);
+    }
+    &__email-wrapper, &__password-wrapper {
+        margin-bottom: calc_percent(14, 200);
+    }
+    &__body, &__submit, &__email, &__password {
+        border-radius: calc_rem(3);
+    }
+}
+
